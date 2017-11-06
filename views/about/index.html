@@ -1,0 +1,25 @@
+<h4>This is about/index.html.</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis cupiditate distinctio dolore dolorem dolores eius esse est fuga incidunt, laborum nihil placeat quas quo reprehenderit soluta sunt voluptates voluptatum.</p>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Contact info</th>
+    </tr>
+    </thead>
+    <tbody>
+    <? foreach($data['about'] as $key)
+            {
+                echo "<tr>";
+                foreach($key as $key1 => $value)
+                {
+                    echo "<td>";
+                    echo $value;
+                    echo "</td>";
+                }
+                echo "</tr>";
+            }
+    ?>
+    </tbody>
+</table>

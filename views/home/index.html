@@ -1,0 +1,28 @@
+<h4>This is the home/index.html</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aut earum laudantium libero odio quod ullam. Adipisci autem, doloremque dolorum, eligendi et ex magnam qui quo quos sapiente sunt voluptatem.</p>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Alias</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Is published</th>
+    </tr>
+    </thead>
+    <tbody>
+    <? foreach($data['home'] as $key)
+            {
+                echo "<tr>";
+
+    foreach($key as $key1 => $value)
+    {
+    echo "<td>";
+        echo $value;
+        echo "</td>";
+    }
+    echo "</tr>";
+    }
+    ?>
+    </tbody>
+</table>

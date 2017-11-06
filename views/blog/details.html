@@ -1,0 +1,23 @@
+<div class="col-md-12">
+    <?php
+
+        foreach($data['details'] as $key)
+        {
+            foreach($key as $key1 => $value)
+            {
+                if($key1 == 'id')
+                {
+                    continue;
+                }
+                elseif($key1 == 'blog_title')
+                {
+                    echo "<h1>" . $value . "</h1>";
+                }
+                else
+                {
+                    echo "<h6>" . $value . "</h6>";
+                }
+            }
+        }
+    ?>
+</div>
