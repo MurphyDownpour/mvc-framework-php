@@ -1,5 +1,5 @@
 <?php
-require_once "C:\OSPanel\domains\localhost\mvc\lib\config.class.php";
+require_once ROOT.DS.'mvc'.DS.'lib'.DS.'config.class.php';
 
 Config::set('site_name', 'MVC');
 Config::set('languages', array('en', 'fr'));
